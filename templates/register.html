@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+
+{% block main %}
+{% if error_message %}
+        <p style="color: red; position:absolute; left:45.25%;">{{ error_message }}</p>
+{% endif %}
+
+<div style="position:relative; top:55px;">
+    <form action="/register" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="username" name="username"
+                placeholder="Username" type="text">
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" id="password" name="password" placeholder="Password" type="password">
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" id="password" name="confirmation" placeholder="Confirm Password"
+                type="password">
+        </div>
+        <button class="btn btn-primary" type="submit" style="position:absolute; left: 47.25%;">Register</button>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    <div class="container" style="padding-top: 30px;">
+        <div style="position: relative; top: 50px;">
+
+            <form id="searchForm">
+
+                <div style="padding-left: 20%;">
+                    <span style="position: relative;top: -20px; left: 105px;"><input autofocus autocomplete="off"
+                            type="text" id="search" placeholder="Enter ingredient(s)" style="width: 45%;"></span>
+                    <span style="position: relative;top: -20px; left: 105px;"><button id="submit"
+                            type="submit">Search</button></span>
+                    <select name="dietry" id="health">
+                        <option value="" disabled selected>Select any health requirement</option>
+                        <option value="vegetarian">Vegetarian</option>
+                        <option value="vegan">Vegan</option>
+                        <option value="gluten-free">Gluten free</option>
+                        <option value="pork-free">Pork free</option>
+                        <option value="peanut-free">Peanut free</option>
+                        <option value="sesame-free">Sesame free</option>
+                        <option value="egg-free">Egg free</option>
+                        <option value="dairy-free">Dairy free</option>
+                        <option value="alcohol-free">Alcohol free</option>
+                        <option value="keto-friendly">Keto Friendly</option>
+                    </select>
+                </div>
+                <div style="position: absolute; left: 39.5%; top: 2%;">
+                    <select name="mealType" id="mealType">
+                        <option value="" disabled selected>Select a meal type</option>
+                        <option value="breakfast">Breakfast</option>
+                        <option value="lunch">Lunch</option>
+                        <option value="teatime">Tea Time</option>
+                        <option value="snack">Snack</option>
+                    </select>
+                </div>
+
+            </form>
+            <div class="image-container" style="left: -90px; width: 170px;height: 170px; top: -30px;">
+                <img src="/static/cute-panda.png" alt="Cute Panda Image">
+            </div>
+            <div class="image-container" style="width: 250px; height: 200px; left: 590px; top: -120px;">
+                <img src="/static/tree.png" alt="tree Image">
+            </div>
+
+        </div>
+    </div>
+
+    <div id="resultsSection" style="padding: 20px;">
+        <!-- Results will be dynamically added here -->
+    </div>
+    <input type="hidden" id="loginStatus" value="{{ status }}">
+
+    <script src="/static/script.js"></script>
+{% endblock %}

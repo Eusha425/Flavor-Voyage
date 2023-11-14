@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<div class="container" style="padding-top: 30px;">
+    <h2>Your Favorites</h2>
+    <ul>
+        {% for favorite in favorites %}
+            <li>{{ favorite.label }} - <a href="{{ favorite.url }}" target="_blank">View Recipe</a></li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% endblock %}
