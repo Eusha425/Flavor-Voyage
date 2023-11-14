@@ -2,5 +2,4 @@ Flask
 Flask-Session
 Werkzeug
 cs50
-sqlite3
 Gunicorn
