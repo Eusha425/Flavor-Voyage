@@ -37,7 +37,7 @@ While building this project, I got to experience and learn how to interact with 
 
 ### Live Demo
 
-*You can check out the live demo at:* flavour-voyage.onrender.com
+*You can check out the live demo at:* [Flavour Voyage](https://flavour-voyage.onrender.com/)
 
 ## Authors
 
