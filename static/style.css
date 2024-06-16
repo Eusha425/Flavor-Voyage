@@ -1,166 +1,213 @@
+@media(max-width:980px) {
+  #panda-img {
+    display: none;
+  }
+}
+
+@media (max-width: 654px) {
+  .card-container {
+    max-width: calc(100vw - 20px);
+    /* Adjusting for a 10px margin on each side */
+    height: auto;
+    margin: 0 10px;
+    /* Center the card by giving equal left and right margins */
+  }
+}
+
+@media(max-width:500px) {
+  .card-container {
+    max-width: calc(100vw - 20px);
+    padding: 10px;
+    font-size: 15px;
+  }
+}
+
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+  /* ie8 */
+}
 
 .image-container {
-    position: absolute;
-    top: 15%;
-    left: -30%;
-    width: 230px;
-    height: 245px;
-    overflow: hidden;
-    z-index: 2; /* Set the image's z-index higher than the card (e.g., 2) */
+  position: absolute;
+  top: 15%;
+  left: -30%;
+  width: 230px;
+  height: 245px;
+  overflow: hidden;
+  z-index: 2;
+  /* Set the image's z-index higher than the card (e.g., 2) */
+  max-width: 100%;
+  height: auto;
 }
 
 .image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 
 .card-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  display: flex;
+  flex-wrap: wrap;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .card {
-    position: relative;
-    width: 650px; 
-    height: 250px; 
-    margin: 50px auto; 
-    border: 1px solid #ddd; /* Light gray border */
-    border-radius: 10px; /* Rounded corners */
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+  position: relative;
+  width: 650px;
+  height: 250px;
+  margin: 50px auto;
+  border: 1px solid #ddd;
+  /* Light gray border */
+  border-radius: 10px;
+  /* Rounded corners */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Box shadow for a subtle lift */
 }
 
 .card-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #333; /* Text color */
-    width: 90%; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #333;
+  /* Text color */
+  width: 90%;
 }
 
 .card-content h2 {
-    margin-bottom: 15px; /* Bottom margin for the heading */
-    font-size: 1.5em; 
-     
+  margin-bottom: 15px;
+  /* Bottom margin for the heading */
+  font-size: 1.5em;
+
 }
 
 
 .card-content p {
-    font-size: 1em; /* Adjust the font size of the paragraph */
-    line-height: 1.5; /* Adjust the line height for better readability */
+  font-size: 1em;
+  /* Adjust the font size of the paragraph */
+  line-height: 1.5;
+  /* Adjust the line height for better readability */
 }
 
-button{
-    border-radius: 10px;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
-    
+button {
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  /* Add a subtle shadow */
+
 }
 
-.button-link:hover{
+.button-link:hover {
   background-color: #ddd;
 }
 
-#health{
-    position: relative; 
-    top: 20px;
-    right: 195px;
+#health {
+  position: relative;
+  top: 20px;
+  right: 195px;
 }
 
-#mealType{
-    position: relative; 
-    top: 20px;
-    right: 195px;
+#mealType {
+  position: relative;
+  top: 20px;
+  right: 195px;
 }
 
 
 
 #resultsSection {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 75px;
-  }
-
-  /* Style the recipe card */
-  #resultsSection > div {
-    width: calc(33.33% - 20px);
-    margin: 10px;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-
-  /* Style the recipe image */
-  #resultsSection img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  /* Style the recipe title */
-  #resultsSection h3 {
-    font-size: 20px;
-    color: #333;
-    margin-top: 10px;
-  }
-
-  /* Style the ingredient list */
-  #resultsSection ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  /* Style the View Recipe link */
-  #resultsSection a {
-    display: block;
-    margin-top: 10px;
-    text-decoration: none;
-    color: #007BFF;
-    font-weight: 500;
-  }
-
-  /* Style the View Recipe link on hover */
-  #resultsSection a:hover {
-    text-decoration: underline;
-  }
-  
-  .container {
-    width: 60%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 100px;
-    background-color: #f5f5f5;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 75px;
 }
-#searchForm{
+
+/* Style the recipe card */
+#resultsSection>div {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the recipe image */
+#resultsSection img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style the recipe title */
+#resultsSection h3 {
+  font-size: 20px;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Style the ingredient list */
+#resultsSection ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Style the View Recipe link */
+#resultsSection a {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: 500;
+}
+
+/* Style the View Recipe link on hover */
+#resultsSection a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 60%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+
+#searchForm {
   position: relative;
   width: 1000px;
   right: 15%;
   bottom: 10px;
 }
 
-#searchForm input{
+#searchForm input {
   position: relative;
   width: 500px;
   right: 105px;
 }
 
-#searchForm button{
+#searchForm button {
   position: relative;
   right: 60px;
   width: 100px;
   background-color: rgb(44, 64, 196);
   color: #ddd;
-  
+
 }
 
 #searchForm button:hover {
