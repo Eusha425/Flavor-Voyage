@@ -99,4 +99,4 @@ This project provided valuable insights into:
 
 ## License 📝
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/Eusha425/Flavour-Voyage/blob/main/LICENSE) file for details.
